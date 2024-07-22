@@ -92,6 +92,7 @@ header nav ul li a:hover {
     transition: background 0.3s, transform 0.3s;
     position: relative;
     top: 35px;
+    cursor:default;
 }
 
 .cta-button:hover {
