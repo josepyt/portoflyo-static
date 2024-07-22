@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Hesap Makinesi Programları',
             description: 'Çeşitli program dilleri kullanarak oluşturduğum hesap makineleri çalışmaları',
             technologies: 'Python, Tkinter, C#, Javascript',
-            link: '#'
+            link: 'https://github.com/josepyt/calculatorApps'
         }
         ,
         {
             title : 'Portfolyo' ,
             description : 'Kendi adıma yaptığım bir portfolyo çalışması' ,
-            technologies : 'HTML5, CSS3, Javascript, PHP , MySQL , phpMyAdmin' ,
-            link : 'index.html'
+            technologies : 'HTML5, CSS3, Javascript, PHP , SQL , phpMyAdmin' ,
+            link : 'https://github.com/josepyt/-portfolio'
         }
     ];
 
@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
         projectCard.innerHTML = `
             <h3>${project.title}</h3>
             <p>${project.description}</p>
-            <p><strong>Teknolojiler:</strong> ${project.technologies}</p>
-            <a href="${project.link}" class="project-link">Detayları Gör</a>
+            <p id=tecnology-3><strong>Teknolojiler:</strong> ${project.technologies}</p>
+            <a href="${project.link}" target="_blank" class="project-link">GitHub Linki</a>
         `;
         
         projectsContainer.appendChild(projectCard);
@@ -102,6 +102,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.getElementById('submit').addEventListener('click' , () => {
-    alert('Mesajınız Gönderildi!');
-
+    alert("Mesajınız Gönderildi!") ;
 }) ;   
