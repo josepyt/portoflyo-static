@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title : 'Portfolyo' ,
             description : 'Kendi adıma yaptığım bir portfolyo çalışması' ,
-            technologies : 'HTML5, CSS3, Javascript, PHP , SQL , phpMyAdmin' ,
+            technologies : 'HTML, CSS, Javascript, PHP , SQL , phpMyAdmin' ,
             link : 'https://github.com/josepyt/-portfolio'
         }
     ];
