@@ -101,8 +101,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.getElementById('submit').addEventListener('click' , () => {
-    alert("Mesajınız Gönderildi!") ;
+    document.getElementById('message').style.display = 'block';
 }) ;   
+
+document.getElementById('contact').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+})
 
 document.addEventListener('wheel', function(event) {
     if (event.deltaY > 0) {
@@ -111,3 +115,4 @@ document.addEventListener('wheel', function(event) {
       window.scrollBy(0, -100);
     } 
 });
+
