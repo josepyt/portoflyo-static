@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetId = link.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
 
-            // Kaydırma süresi (milisaniye cinsinden)
+
             const scrollDuration = 800; 
             const startPosition = window.pageYOffset;
             const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
@@ -127,4 +127,23 @@ document.addEventListener('wheel', function(event) {
       window.scrollBy(0, -100);
     } 
 });
+
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.onscroll = function() { scrollFunction(); };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+}
+
+scrollTopBtn.onclick = function() {
+  document.body.scrollTop = 0; // Safari için yazdım
+  document.documentElement.scrollTop = 0; // Chrome, Firefox, IE ve Opera için yazdım
+};
+
 

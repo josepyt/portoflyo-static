@@ -307,6 +307,24 @@ header nav ul li a:hover {
     text-align: center;
 }
 
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 35px;
+}
+
+#scrollTopBtn:hover {
+    background-color: #333;
+  }
+
 footer {
     background: #222;
     color: #fff;
