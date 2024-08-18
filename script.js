@@ -104,9 +104,21 @@ document.getElementById('submit').addEventListener('click' , () => {
     document.getElementById('message').style.display = 'block';
 }) ;   
 
+
+
+const resetText = (text) => {
+    setTimeout(() => {
+        text.textContent = '';
+    }, 3200);
+};
+
+
 document.getElementById('contact').addEventListener('submit', function(event) {
-    event.preventDefault(); 
+    event.preventDefault()
+    const message = document.getElementById('message') ;
+    resetText(message)  ;
 })
+
 
 document.addEventListener('wheel', function(event) {
     if (event.deltaY > 0) {
