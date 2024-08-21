@@ -1,27 +1,3 @@
-
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form');
-
-    form.addEventListener('submit', (event) => {
-        const name = form.querySelector('input[name="name"]').value;
-        const email = form.querySelector('input[name="email"]').value;
-        const message = form.querySelector('textarea[name="message"]').value;
-
-        if (!name || !email || !message) {
-            alert('Lütfen tüm alanları doldurunuz.');
-            event.preventDefault();
-        } else if (!validateEmail(email)) {
-            alert('Geçerli bir e-posta adresi giriniz.');
-            event.preventDefault();
-        }
-    });
-
-    function validateEmail(email) {
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailPattern.test(email);
-    }
-});
-
 document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
