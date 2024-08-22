@@ -371,3 +371,48 @@ footer {
         top: 370px;
     }
 }
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav a {
+        position: relative;
+        right: 60px;
+    }
+
+    .hero {
+        background: url('pp.jpg') ; 
+        background-size: cover;
+        height: 400px;
+    }
+
+    .hero p {
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 150px;
+        font-weight: 500;
+    }
+
+    .hero h1 {
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 140px;
+    }
+
+    .cta-button {
+        position: relative;
+        top: 170px;
+    }
+
+    .about-photo img {
+        position: relative;
+        right: 157px;
+    }
+
+    .about-text p {
+        position: relative;
+        right: 160px;
+    }
+}
