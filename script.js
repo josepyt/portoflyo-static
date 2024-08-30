@@ -110,7 +110,7 @@ const scrollTopBtn = document.getElementById("scrollTopBtn");
 window.onscroll = function() { scrollFunction(); };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+  if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
     scrollTopBtn.style.display = "block";
   } else {
     scrollTopBtn.style.display = "none";
